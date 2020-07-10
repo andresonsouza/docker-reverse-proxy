@@ -1,0 +1,40 @@
+version: '3.5'
+
+services:
+
+  node1:
+    build:
+      dockerfile: mail-example.dockerfile
+      context: ./mail-example/
+    image: asouza/mail-example
+    container_name: mail-example
+    networks:
+      - production-network
+    ports:
+      - "3000:3000"
+
+  node2:
+    build:
+      dockerfile: app-example.dockerfile
+      context: ./app-example/
+    image: asouza/app-example
+    container_name: app-example
+    networks:
+      - production-network
+    ports:
+      - "3001:3001"
+
+  node3:
+    build:
+      dockerfile: api-example.dockerfile
+      context: ./api-example/
+    image: asouza/api-example
+    container_name: api-example
+    networks:
+      - production-network
+    ports:
+      - "3002:3002"
+
+networks:
+  production-network:
+   driver: bridge
