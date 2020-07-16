@@ -19,6 +19,6 @@ docker-compose up
 ### Endereço das aplicações
 Após subir os serviços com o docker-compose usar os seguintes endereços para as aplicações:
 
-[mail.example.local](http://mail.example.local)
-[app.example.local](http://app.example.local)
+[mail.example.local](http://mail.example.local)<br />
+[app.example.local](http://app.example.local)<br />
 [app.example.local/api](http://app.example.local/api)
