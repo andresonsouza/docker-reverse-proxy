@@ -1,6 +1,6 @@
 ## Nginx e docker
 
-### Edite o arquivo /etc/hosts para simular o DNS
+### Adicione a resolução de nomes ao arquivo /etc/hosts
 ```bash
 cd scripts
 sudo ./script-hosts.sh
@@ -15,3 +15,10 @@ docker-compose build
 ```bash
 docker-compose up
 ```
+
+### Endereço das aplicações
+Após subir os serviços com o docker-compose usar os seguintes endereços para as aplicações:
+
+[mail.example.local](http://mail.example.local)
+[app.example.local](http://app.example.local)
+[app.example.local/api](http://app.example.local/api)
