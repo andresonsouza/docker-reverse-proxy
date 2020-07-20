@@ -4,4 +4,5 @@ COPY . /var/www
 WORKDIR /var/www
 RUN npm install
 ENTRYPOINT ["npm", "start"]
-EXPOSE 3000
+# Indica/informa qual porta o serviço(node) está expondo.
+EXPOSE 3000 
